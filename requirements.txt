@@ -1,4 +1,4 @@
 pandas
 Dash
-JupyterDash
 gunicorn
+plotly
