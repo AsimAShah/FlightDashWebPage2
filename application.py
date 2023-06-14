@@ -1,4 +1,3 @@
-# Import required libraries
 import pandas as pd
 import dash
 from dash import html
@@ -203,4 +202,3 @@ def get_graph(chart, year, children1, children2, children3, children4,children5)
 if __name__ == '__main__':
     # REVIEW8: Adding dev_tools_ui=False, dev_tools_props_check=False can prevent error appearing before calling callback function
     app.run_server(host="localhost", debug=False, dev_tools_ui=False, dev_tools_props_check=False)
-
