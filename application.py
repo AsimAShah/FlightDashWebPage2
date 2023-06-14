@@ -107,7 +107,7 @@ app.layout = html.Div(children=[
     html.Div([], id='plot1'),
     html.Div([
         html.Div([], id='plot2'),
-        html.Div([], id='plot3')
+        html.Div([], id='plot3')   # Remember the layout of the page, style is used to keep the 2 divs side by side close to eachother 
     ], style={'display': 'flex'}),
     
     html.Div([
@@ -125,13 +125,13 @@ app.layout = html.Div(children=[
  Output(component_id="plot4", component_property="children"),
  Output(component_id="plot5", component_property="children")
 ],
-[Input(component_id="input-type", component_property="value"),
+[Input(component_id="input-type", component_property="value"), # remember, the order of inputs will match order of inputs in main function
  Input(component_id="input-year", component_property="value")
 ],
 # REVIEW4: Holding output state till the user enters all the form information. In this case, it will be chart type and year
 [State("plot1", "children"),
  State("plot2", "children"),
- State("plot3", "children"),
+ State("plot3", "children"),     # think of these as transporters, they will hold(transport) your outputs to the empty divs 
  State("plot4", "children"),
  State("plot5", "children")
 ])
