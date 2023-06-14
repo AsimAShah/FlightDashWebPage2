@@ -105,7 +105,7 @@ app.layout = html.Div(children=[
 
     # Computed graphs
     # Empty divs that will be populated during callback
-    html.Div([], id='plot1', style={'display': 'flex'}),
+    html.Div([], id='plot1'),
     html.Div([
         html.Div([], id='plot2'),
         html.Div([], id='plot3')
