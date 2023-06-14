@@ -1,2 +1,2 @@
 python-3.8
-heroku stack:set heroku-20 application.ipynb
+heroku stack:set heroku-20 application
